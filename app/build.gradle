@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.contactsapp'
+    namespace 'com.example.contactapp'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.contactsapp"
+        applicationId "com.example.contactapp"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -30,6 +30,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures{
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -41,4 +44,8 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.squareup.picasso:picasso:2.8'
+    implementation 'jp.wasabeef:picasso-transformations:2.4.0'
+
+
 }
